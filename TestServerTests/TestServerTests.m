@@ -7,6 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <KIF/KIF.h>
+#import "ViewController.h"
 
 @interface TestServerTests : XCTestCase
 
@@ -28,7 +30,9 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    [tester waitForViewWithAccessibilityLabel:@"TextField"];
+    [tester enterText:@"ahmed 7asl 3ala el server" intoViewWithAccessibilityLabel:@"TextField"];
+    [tester tapViewWithAccessibilityLabel:@"Button"];
 }
 
 @end

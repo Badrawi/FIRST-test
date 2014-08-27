@@ -13,7 +13,7 @@
 @end
 
 @implementation ViewController
-
+@synthesize  textfield = textfield_,textview=textview_;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -26,4 +26,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)ButtonPressed:(id)sender
+{
+    textview_.text = textfield_.text;
+}
+-(IBAction)textfieldDone:(id)sender
+{
+    [self resignFirstResponder];
+}
 @end

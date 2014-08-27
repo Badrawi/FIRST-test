@@ -14,7 +14,6 @@
 		4110B19219ACE06700714E91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4110B19119ACE06700714E91 /* main.m */; };
 		4110B19619ACE06700714E91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4110B19519ACE06700714E91 /* AppDelegate.m */; };
 		4110B19919ACE06700714E91 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4110B19719ACE06700714E91 /* Main_iPhone.storyboard */; };
-		4110B19C19ACE06700714E91 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4110B19A19ACE06700714E91 /* Main_iPad.storyboard */; };
 		4110B19F19ACE06700714E91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4110B19E19ACE06700714E91 /* ViewController.m */; };
 		4110B1A119ACE06700714E91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4110B1A019ACE06700714E91 /* Images.xcassets */; };
 		4110B1A819ACE06700714E91 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4110B1A719ACE06700714E91 /* XCTest.framework */; };
@@ -22,6 +21,7 @@
 		4110B1AA19ACE06700714E91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4110B18919ACE06700714E91 /* UIKit.framework */; };
 		4110B1B219ACE06700714E91 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4110B1B019ACE06700714E91 /* InfoPlist.strings */; };
 		4110B1B419ACE06700714E91 /* TestServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4110B1B319ACE06700714E91 /* TestServerTests.m */; };
+		4110B1D019ACE57D00714E91 /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4110B1C719ACE4A200714E91 /* libKIF.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +31,41 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4110B18119ACE06600714E91;
 			remoteInfo = TestServer;
+		};
+		4110B1C619ACE4A200714E91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4110B1BD19ACE4A100714E91 /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EABD46AA1857A0C700A5F081;
+			remoteInfo = KIF;
+		};
+		4110B1C819ACE4A200714E91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4110B1BD19ACE4A100714E91 /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB72047C1680DDAD00278DA2;
+			remoteInfo = "KIF-OCUnit";
+		};
+		4110B1CA19ACE4A200714E91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4110B1BD19ACE4A100714E91 /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB60ECC1177F8C83005A041A;
+			remoteInfo = "Test Host";
+		};
+		4110B1CC19ACE4A200714E91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4110B1BD19ACE4A100714E91 /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EABD46CD1857A0F300A5F081;
+			remoteInfo = "KIF Tests";
+		};
+		4110B1CE19ACE4A200714E91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4110B1BD19ACE4A100714E91 /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB60ECEB177F8DB3005A041A;
+			remoteInfo = "KIF Tests-OCUnit";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -46,7 +81,6 @@
 		4110B19419ACE06700714E91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4110B19519ACE06700714E91 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4110B19819ACE06700714E91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		4110B19B19ACE06700714E91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		4110B19D19ACE06700714E91 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4110B19E19ACE06700714E91 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4110B1A019ACE06700714E91 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -55,6 +89,7 @@
 		4110B1AF19ACE06700714E91 /* TestServerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestServerTests-Info.plist"; sourceTree = "<group>"; };
 		4110B1B119ACE06700714E91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4110B1B319ACE06700714E91 /* TestServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestServerTests.m; sourceTree = "<group>"; };
+		4110B1BD19ACE4A100714E91 /* KIF.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KIF.xcodeproj; path = "../KIF-master/KIF.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4110B1D019ACE57D00714E91 /* libKIF.a in Frameworks */,
 				4110B18819ACE06700714E91 /* CoreGraphics.framework in Frameworks */,
 				4110B18A19ACE06700714E91 /* UIKit.framework in Frameworks */,
 				4110B18619ACE06600714E91 /* Foundation.framework in Frameworks */,
@@ -88,6 +124,7 @@
 				4110B1AD19ACE06700714E91 /* TestServerTests */,
 				4110B18419ACE06600714E91 /* Frameworks */,
 				4110B18319ACE06600714E91 /* Products */,
+				4110B1BD19ACE4A100714E91 /* KIF.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,7 +154,6 @@
 				4110B19419ACE06700714E91 /* AppDelegate.h */,
 				4110B19519ACE06700714E91 /* AppDelegate.m */,
 				4110B19719ACE06700714E91 /* Main_iPhone.storyboard */,
-				4110B19A19ACE06700714E91 /* Main_iPad.storyboard */,
 				4110B19D19ACE06700714E91 /* ViewController.h */,
 				4110B19E19ACE06700714E91 /* ViewController.m */,
 				4110B1A019ACE06700714E91 /* Images.xcassets */,
@@ -153,6 +189,18 @@
 				4110B1B019ACE06700714E91 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4110B1BE19ACE4A100714E91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4110B1C719ACE4A200714E91 /* libKIF.a */,
+				4110B1C919ACE4A200714E91 /* libKIF-OCUnit.a */,
+				4110B1CB19ACE4A200714E91 /* Test Host.app */,
+				4110B1CD19ACE4A200714E91 /* KIF Tests - XCTest.xctest */,
+				4110B1CF19ACE4A200714E91 /* KIF Tests-OCUnit.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +266,12 @@
 			mainGroup = 4110B17919ACE06600714E91;
 			productRefGroup = 4110B18319ACE06600714E91 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4110B1BE19ACE4A100714E91 /* Products */;
+					ProjectRef = 4110B1BD19ACE4A100714E91 /* KIF.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4110B18119ACE06600714E91 /* TestServer */,
@@ -226,12 +280,49 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		4110B1C719ACE4A200714E91 /* libKIF.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKIF.a;
+			remoteRef = 4110B1C619ACE4A200714E91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4110B1C919ACE4A200714E91 /* libKIF-OCUnit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libKIF-OCUnit.a";
+			remoteRef = 4110B1C819ACE4A200714E91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4110B1CB19ACE4A200714E91 /* Test Host.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Test Host.app";
+			remoteRef = 4110B1CA19ACE4A200714E91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4110B1CD19ACE4A200714E91 /* KIF Tests - XCTest.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "KIF Tests - XCTest.xctest";
+			remoteRef = 4110B1CC19ACE4A200714E91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4110B1CF19ACE4A200714E91 /* KIF Tests-OCUnit.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "KIF Tests-OCUnit.octest";
+			remoteRef = 4110B1CE19ACE4A200714E91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		4110B18019ACE06600714E91 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4110B19C19ACE06700714E91 /* Main_iPad.storyboard in Resources */,
 				4110B1A119ACE06700714E91 /* Images.xcassets in Resources */,
 				4110B19919ACE06700714E91 /* Main_iPhone.storyboard in Resources */,
 				4110B19019ACE06700714E91 /* InfoPlist.strings in Resources */,
@@ -292,14 +383,6 @@
 				4110B19819ACE06700714E91 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		4110B19A19ACE06700714E91 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4110B19B19ACE06700714E91 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		4110B1B019ACE06700714E91 /* InfoPlist.strings */ = {
@@ -425,13 +508,17 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestServer/TestServer-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "KIF_XCTEST=1";
 				INFOPLIST_FILE = "TestServerTests/TestServerTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -448,9 +535,18 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestServer/TestServer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "KIF_XCTEST=1";
 				INFOPLIST_FILE = "TestServerTests/TestServerTests-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -474,6 +570,7 @@
 				4110B1B919ACE06700714E91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4110B1BA19ACE06700714E91 /* Build configuration list for PBXNativeTarget "TestServerTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +579,7 @@
 				4110B1BC19ACE06700714E91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

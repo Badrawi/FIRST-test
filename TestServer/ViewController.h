@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+{
+    UITextView *textview_;
+    UITextField *textfield_;
+}
+@property (nonatomic , retain) IBOutlet UITextView * textview;
+@property (nonatomic , retain) IBOutlet UITextField *textfield;
+-(IBAction)ButtonPressed:(id)sender;
+-(IBAction)textfieldDone:(id)sender;
 @end
